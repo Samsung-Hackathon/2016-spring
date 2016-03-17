@@ -1,11 +1,16 @@
 package com.spring2016;
 
 import com.facebook.react.ReactActivity;
+import com.github.xinthink.rnmk.ReactMaterialKitPackage;
+import io.realm.react.RealmReactPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.magus.fblogin.FacebookLoginPackage;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 
 import java.util.Arrays;
 import java.util.List;
+ import io.realm.react.RealmReactPackage;
 
 public class MainActivity extends ReactActivity {
 
@@ -34,7 +39,12 @@ public class MainActivity extends ReactActivity {
     @Override
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
-            new MainReactPackage()
+            // new MainReactPackage(),
+            new ReactMaterialKitPackage(),
+            new RealmReactPackage(),
+            new VectorIconsPackage(),
+            new FacebookLoginPackage()
+            new RealmReactPackage()
         );
     }
 }
