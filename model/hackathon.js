@@ -34,12 +34,12 @@ Hackathon.schema = {
     title : {type: 'string'},
     description : {type: 'string'},
     picture : {type: 'data', optional: true},
-    ideas : {type:'list',objectType:'Idea'},
-    polls : {type:'list',objectType:'Poll'},
+    // ideas : {type:'list',objectType:'Idea', optional: true},
+    // polls : {type:'list',objectType:'Poll', optional: true},
     joinType : {type: 'string'},
     joinmail : {type: 'string'},
     cratedAt : {type:'date'},
     updatedAt : {type:'date'},
-    owner : {type:'User'},
+    // owner : {type:'string', optional: true},
   }
 };

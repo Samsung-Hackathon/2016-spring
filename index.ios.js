@@ -19,6 +19,7 @@ var LoginPage = require('./crossplatform/LoginPage');
 var SplashPage = require('./crossplatform/SplashPage');
 var HackathonListPage = require('./crossplatform/HackathonListPage');
 var HackathonEditPage = require('./crossplatform/HackathonEditPage');
+
 class spring2016 extends Component {
   render() {
    return (
